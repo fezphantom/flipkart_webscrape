@@ -7,7 +7,7 @@ from urllib.request import urlopen as uReq
 app = Flask(__name__)
 
 @app.route("/",methods = ['GET','POST'])
-def hello_world():
+def home_page():
     return render_template('index.html')
 
 @app.route('/review',methods = ['GET','POST'])
